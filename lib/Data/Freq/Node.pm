@@ -10,11 +10,11 @@ Data::Freq::Node - Represents a node of the result tree constructed by Data::Fre
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use List::Util;
 
@@ -84,23 +84,6 @@ sub add_subnode {
 	$child->{last} = $self->count;
 	
 	$child->{count}++;
-	
-=begin
-	if (!defined $self->max || $self->max < $child->count) {
-		$self->{max} = $child->count;
-	}
-	
-	if (defined $self->min) {
-		if ($child->count - 1 == $self->min) {
-			if ($self->min_ref == 1) {
-				
-			}
-		}
-	} else {
-		$self->{min} = $child->count;
-		$self->{min_ref} = 1;
-	}
-=cut
 	
 	return $child;
 }
