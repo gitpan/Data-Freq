@@ -10,11 +10,11 @@ Data::Freq::Field - Controls counting with Data::Freq at each level
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Carp qw(croak);
 use Date::Parse qw(str2time);
@@ -296,19 +296,19 @@ sub _extract_type {
 		return $self;
 	} elsif ($input =~ /^(date|day)s?$/i) {
 		$self->{type} = 'date';
-		$self->{strftime} = '%F';
+		$self->{strftime} = '%Y-%m-%d';
 		return $self;
 	} elsif ($input =~ /^hours?$/i) {
 		$self->{type} = 'date';
-		$self->{strftime} = '%F %H';
+		$self->{strftime} = '%Y-%m-%d %H';
 		return $self;
 	} elsif ($input =~ /^minutes?$/i) {
 		$self->{type} = 'date';
-		$self->{strftime} = '%F %H:%M';
+		$self->{strftime} = '%Y-%m-%d %H:%M';
 		return $self;
 	} elsif ($input =~ /^(seconds?|time)?$/i) {
 		$self->{type} = 'date';
-		$self->{strftime} = '%F %T';
+		$self->{strftime} = '%Y-%m-%d %H:%M:%S';
 		return $self;
 	}
 	
