@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Data-Freq
-version:            0.03
+version:            0.04
 abstract:           Collects data, counts frequency, and makes up a multi-level counting report
 author:
     - Mahiro Ando <mahiro@cpan.org>
