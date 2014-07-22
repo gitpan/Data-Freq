@@ -13,4 +13,5 @@ t/11-record.t
 t/12-evaluate.t
 t/13-select.t
 t/20-freq.t
-META.yml                                 Module meta-data (added by MakeMaker)
+META.yml                                 Module YAML meta-data (added by MakeMaker)
+META.json                                Module JSON meta-data (added by MakeMaker)

@@ -1,26 +1,26 @@
---- #YAML:1.0
-name:               Data-Freq
-version:            0.04
-abstract:           Collects data, counts frequency, and makes up a multi-level counting report
+---
+abstract: 'Collects data, counts frequency, and makes up a multi-level counting report'
 author:
-    - Mahiro Ando <mahiro@cpan.org>
-license:            perl
-distribution_type:  module
-configure_requires:
-    ExtUtils::MakeMaker:  0
+  - 'Mahiro Ando <mahiro@cpan.org>'
 build_requires:
-    ExtUtils::MakeMaker:  0
-requires:
-    Date::Parse:   1.20
-    List::Util:    1.22
-    Pod::Usage:    1.36
-    Scalar::Util:  1.22
-    Test::More:    0.94
-no_index:
-    directory:
-        - t
-        - inc
-generated_by:       ExtUtils::MakeMaker version 6.56
+  ExtUtils::MakeMaker: 0
+configure_requires:
+  ExtUtils::MakeMaker: 0
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.76, CPAN::Meta::Converter version 2.132620'
+license: perl
 meta-spec:
-    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
-    version:  1.4
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Data-Freq
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  Date::Parse: 1.20
+  List::Util: 1.22
+  Pod::Usage: 1.36
+  Scalar::Util: 1.22
+  Test::More: 0.94
+version: 0.05
